@@ -1,5 +1,5 @@
 "use client";
-
+import PortfolioBanner from "@/components/PortfolioBanner";
 import React from "react";
 import {
   Column,
@@ -31,8 +31,8 @@ export default function Home() {
       <Column maxWidth="m" aspectRatio="2/1" marginBottom="40" paddingY="24">
         {content.cover && (
           <Row fill position="absolute" left="0" top="0" radius="xl" overflow="hidden" border="neutral-alpha-weak">
-            <Media sizes="(max-width: 768px) 100vw, 960px" priority fill src={content.cover} alt={content.name}/>
-            <Fade fill position="absolute" to="top" bottom="0" left="0" pattern={{ display: true, size: "2" }}/>
+            <Media sizes="(max-width: 768px) 100vw, 960px" priority fill src={content.cover} alt={content.name} />
+            <Fade fill position="absolute" to="top" bottom="0" left="0" pattern={{ display: true, size: "2" }} />
           </Row>
         )}
         <Column fill center padding="l" gap="4" align="center">
@@ -66,7 +66,7 @@ export default function Home() {
           )}
         </Column>
       </Column>
-      
+      {/* <PortfolioBanner /> */}
       <Column maxWidth="s" gap="24">
         {content.links?.length > 0 && (
           <>
@@ -90,7 +90,8 @@ export default function Home() {
         )}
         <Row fillWidth padding="l" horizontal="center" textVariant="label-default-s">
           <Text onBackground="neutral-weak">
-            {new Date().getFullYear() + " "}
+            © Ikjoen /
+            {" " + new Date().getFullYear() + " "}
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
             / Build your bio with{" "}
             <SmartLink

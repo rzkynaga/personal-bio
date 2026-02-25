@@ -1,4 +1,4 @@
-const baseURL = "https://yourlink.bio";
+const baseURL = "https://portfolio.ikjoen.space";
 
 // Import and set font for each variant
 import { Geist } from "next/font/google";
