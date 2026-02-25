@@ -8,10 +8,22 @@ const content = {
     {
       title: "Portfolio Space",
       description:
-        "Selected projects in UI/UX design, frontend engineering, and scalable digital systems built for real-world impact.",
+        "A curated collection of systems, interfaces, and web products I’ve built.",
       url: "https://portfolio.ikjoen.space",
-      favicon: true,
-      size: "l" // ini penting
+
+      media: "/images/portfolio-preview2.png",
+      favicon: "/images/favicon.ico",
+      size: "l",
+    },
+    {
+      title: "Curriculum Vitae",
+      description:
+        "A collection of my professional background and qualifications.",
+      url: "https://drive.google.com/file/d/1OmZRgmDCZQS-R8zsnUOPnCJgLF6SMDe0/view?usp=sharing",
+
+      media: "/images/cv-preview3.png",
+      direction: "column",
+      size: "l",
     },
     // {
     //   title: "Magic Portfolio", // optional

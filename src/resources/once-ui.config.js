@@ -138,6 +138,16 @@ const social = [
     icon: 'threads',
     link: 'https://www.threads.com/@kizvn',
   },
+  {
+    name: 'WhatsApp',
+    icon: 'whatsapp',
+    link: 'https://wa.me/6285121326881',
+  },
+  {
+    name: 'Instagram',
+    icon: 'instagram',
+    link: 'https://www.instagram.com/rzkynaga',
+  },
 ]
 
 // default schema data
