@@ -1,6 +1,7 @@
 "use client";
 import PortfolioBanner from "@/components/PortfolioBanner";
 import React from "react";
+import CloneChat from "@/components/cloneChat";
 import {
   Column,
   Row,
@@ -66,6 +67,7 @@ export default function Home() {
           )}
         </Column>
       </Column>
+      {/* <CloneChat /> */}
       {/* <PortfolioBanner /> */}
       <Column maxWidth="s" gap="24">
         {content.links?.length > 0 && (

@@ -128,16 +128,11 @@ const social = [
     icon: 'github',
     link: 'https://github.com/rzkynaga',
   },
-  {
-    name: 'LinkedIn',
-    icon: 'linkedin',
-    link: 'https://www.linkedin.com/in/rzkynaga',
-  },
-  {
-    name: 'Threads',
-    icon: 'threads',
-    link: 'https://www.threads.com/@kizvn',
-  },
+  // {
+  //   name: 'Threads',
+  //   icon: 'threads',
+  //   link: 'https://www.threads.com/@kizvn',
+  // },
   {
     name: 'WhatsApp',
     icon: 'whatsapp',
@@ -148,6 +143,11 @@ const social = [
     icon: 'instagram',
     link: 'https://www.instagram.com/rzkynaga',
   },
+  {
+    name: 'LinkedIn',
+    icon: 'linkedin',
+    link: 'https://www.linkedin.com/in/rzkynaga',
+  },
 ]
 
 // default schema data
@@ -156,7 +156,7 @@ const schema = {
   type: "person",
   name: meta.title,
   description: meta.description,
-  email: "selene.yu@gmail.com",
+  email: "rzkynaga1@gmail.com",
 };
 
 export { baseURL, style, dataStyle, meta, og, schema, social, effects, fonts };
