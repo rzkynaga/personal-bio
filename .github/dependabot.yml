@@ -3,12 +3,24 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
+      interval: "monthly"
+    # Satu PR per bulan untuk semua update minor/patch, supaya notifikasi
+    # GitHub dan deploy preview Vercel tidak membanjir.
+    open-pull-requests-limit: 2
     groups:
-      minor-and-patch:
+      all-dependencies:
+        patterns: ["*"]
         update-types: ["minor", "patch"]
+    # Versi major (mis. React 19, TypeScript 7) bisa merusak build, jadi
+    # di-upgrade manual saja. Update keamanan tetap datang lewat
+    # Dependabot security updates.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      actions:
+        patterns: ["*"]
