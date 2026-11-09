@@ -10,15 +10,15 @@
     "biome-write": "npx @biomejs/biome format --write ."
   },
   "dependencies": {
-    "@once-ui-system/core": "1.6.3",
+    "@once-ui-system/core": "1.8.5",
     "classnames": "^2.5.1",
-    "next": "^16.4.2",
+    "next": "^16.4.5",
     "openai": "^6.49.0",
     "react": "^19.3.1",
     "react-dom": "19.3.1",
     "react-icons": "^5.7.0",
     "react-markdown": "^10.1.0",
-    "sharp": "^0.33.5"
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
